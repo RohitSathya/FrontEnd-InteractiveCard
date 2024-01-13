@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+ 
+</head>
+<body>
+    <div class="box1">
+       
+    </div>
+
+    <div class="ib1">
+        <div class="c1"></div>
+        <div class="c2"></div>
+        <div class="nu">
+            <p style="color: white;font-size: 35px;margin-top: 157px;margin-left: -110px;" id="cr1">0 0 0 0 </p>
+            <p style="color: white;font-size: 35px;margin-top: 157px;margin-left: 20px;" id="cr2">0 0 0 0 </p>
+            <p style="color: white;font-size: 35px;margin-top: 157px;margin-left: 20px;" id="cr3">0 0 0 0 </p>
+            <p style="color: white;font-size: 35px;margin-top: 157px;margin-left: 20px;" id="cr4">0 0 0 0 </p><br/>
+        </div><br/>
+        <div class="x2">
+            <p style="margin-left: -448px;margin-top: 241px;color: white;font-size: 25px;" id="nr1">Rohit Satya</p>
+        </div>
+    
+        <div class="x1">
+            <p style="margin-left: 283px;margin-top: 247px;color: white;font-size: 20px;" id="nr2">0 0 /</p>
+            <p style="margin-left: 326px;margin-top: -43px;color: white;font-size: 20px;" id="nr3"> 0 0</p>
+        </div>
+
+   
+            
+    </div>
+    <div class="ib2">
+        <div class="l1"></div>
+        <div class="l2">
+            <p style="color: white;font-size: 22px;margin-left: 353px;margin-top: 18px;">0 0 0</p>
+        </div>
+       <div class="sam">
+        <div class="z1"></div>
+        <div class="z2"></div>
+        <div class="z3"></div>
+        <div class="z4"></div>
+       </div>
+       <div class="sam2">
+        <div class="z5"></div>
+        <div class="z6"></div>
+        <div class="z7"></div>
+        <div class="z8"></div>
+       </div>
+       <div class="sam3">
+        <div class="z9"></div>
+        <div class="z10"></div>
+        <div class="z11"></div>
+        <div class="z12"></div>
+       </div>
+        
+            
+    </div>
+    <div class="box2">
+        <div class="lab">
+            <label>C A R D H O L D E R </label>
+
+            <label class="la2"> N A M E</label>
+        </div>
+        
+        
+        <input type="text" class="f1" placeholder="e.g Rohit Satya" id="f-1"><br/>
+        <p style="color: red;font-size: 20px;margin-top: -5px;display: none;" id="cb1">Can't be blank</p>
+
+        <div class="lab2">
+            <label>C A R D </label>
+
+            <label class="la2"> N U M B E R</label>
+        </div>
+        <input type="text" class="f1" id="b-1" maxlength="19" placeholder="e.g.  1 2 3 4  5 7 9 4  2 3 4 8  1 5 0 4">
+        <p style="color: red;font-size: 20px;margin-top: 12px;display: none;" id="cb2">Can't be blank</p>
+   
+        <div class="lab3">
+            <label>E X P .</label>
+
+            <label class="la2"> D A T E</label>
+            <label class="la2"> (M M / Y Y)</label>
+            <label class="la3"> C V C</label>
+        </div>
+        <div class="to">
+            <input type="text" class="f2" placeholder="MM" maxlength="2" id="f-2"><br/>
+            <p style="color: red;font-size: 20px;margin-top: 92px;margin-left: -110px;display: none;" id="cb3">Can't be blank</p>
+            <p style="color: red;font-size: 20px;margin-top: 0px;display: none;" id="wf2">Wrong Month</p>
+        <input type="text" class="f3" placeholder="YY" maxlength="2" id="f-3"> <br/>
+        <p style="color: red;font-size: 20px;margin-top: 92px;margin-left: -100px;display: none;" id="cb4">Can't be blank</p>
+        <p style="color: red;font-size: 20px;margin-top: 0px;display: none;" id="wf3">Invalid Year</p>
+        <input type="text" class="f4" placeholder="e.g . 1 2 3" maxlength="3" id="f-4"><br/>
+        <p style="color: red;font-size: 20px;margin-top: 92px;margin-left: -130px;display: none;" id="cb5">Can't be blank</p>
+        <p style="color: red;font-size: 20px;margin-top: 0px;display: none;" id="wf4">Wrong format,numbers only</p>
+        </div>
+        <div class="but">
+            <input type="button"  class="b1" style="background-color: rgb(35, 2, 71);font-size: 20px;font-weight: 500;color: white;" value="Confirm" onclick="sub()">
+        </div>
+        
+    </div>
+    <script>
+        document.getElementById('b-1').addEventListener('input',function(event){
+            let inputValue = event.target.value.replace(/\s/g, ''); // Remove existing spaces
+               inputValue = inputValue.replace(/(.{4})/g, '$1 '); // Add space after every 4 characters
+                event.target.value = inputValue.trim(); // Remove tr
+        })
+        function sub(){
+            console.log(1)
+            let cb1=document.getElementById('cb1')
+            let cb2=document.getElementById('cb2')
+            let cb3=document.getElementById('cb3')
+            let cb4=document.getElementById('cb4')
+            let cb5=document.getElementById('cb5')
+
+             if(document.getElementById('f-1').value==''){
+            
+                cb1.style.display='block'
+            }
+            if(document.getElementById('b-1').value==''){
+         
+                cb2.style.display='block'
+            }
+            if(document.getElementById('f-2').value==''){
+               
+                cb3.style.display='block'
+            }
+            if(document.getElementById('f-3').value==''){
+               console.log(33)
+                cb4.style.display='block'
+            }
+            if(document.getElementById('f-4').value==''){
+         
+                cb5.style.display='block'
+            }
+           
+
+
+
+            else{
+                cb1.style.display='none'
+                cb2.style.display='none'
+                cb3.style.display='none'
+                cb4.style.display='none'
+                cb5.style.display='none'
+
+            
+
+
+
+
+            let a=document.getElementById('f-1').value
+            let b=document.getElementById('f-2').value
+            let c=document.getElementById('f-3').value
+            let d=document.getElementById('f-4').value
+            console.log(a)
+            if(/\d+/.test(a)){
+                let wf1=document.getElementById('cb1')
+                wf1.style.display='block'
+                wf1.innerText='Invalid Name'
+            }
+            if(Number(b)>12){
+                let wf2=document.getElementById('cb3')
+                wf2.style.display='block'
+                wf2.innerText='Invalid Month'
+            }
+            if(Number(c)<23 || Number(c)>35){
+                let wf3=document.getElementById('cb4')
+                wf3.style.display='block'
+                wf3.innerText='Invalid Year'
+            }
+            if(!/^\d+$/.test(b)){
+                let wf2=document.getElementById('cb3')
+                wf2.style.display='block'
+                wf2.innerText='Numbers only'
+
+            }
+            if(!/^\d+$/.test(c)){
+                
+                 let wf3=document.getElementById('cb4')
+                
+                     wf3.style.display='block'
+                wf3.innerText='Numbers only'
+               
+                
+
+            }
+            if(!/^\d+$/.test(d)){
+                let wf4=document.getElementById('cb5')
+                wf4.style.display='block'
+                wf4.innerText='Wrong Format,Numbers only'
+
+            }
+           
+           
+            document.getElementById('nr1').innerHTML=a
+            document.getElementById('nr2').innerHTML=`${b} / `
+            document.getElementById('nr3').innerHTML=c
+            var it=document.getElementById('b-1').value.replace(/\s+/g, '')
+            if(/^\d+$/.test(it)){
+                var p1=it.substring(0,4)
+            var p2=it.substring(4,8)
+            var p3=it.substring(8,12)
+            var p4=it.substring(12,16)
+            document.getElementById('cr1').innerText = p1[0]+' '+p1[1]+' '+p1[2]+' '+p1[3];
+            document.getElementById('cr2').innerText =  p2[0]+' '+p2[1]+' '+p2[2]+' '+p4[3];
+            document.getElementById('cr3').innerText =  p3[0]+' '+p3[1]+' '+p3[2]+' '+p3[3];
+            document.getElementById('cr4').innerText =  p4[0]+' '+p4[1]+' '+p4[2]+' '+p4[3];
+               console.log(typeof(it))
+            }else{
+                let wf1=document.getElementById('cb2')
+                wf1.style.display='block'
+                wf1.innerText='Wrong Format, Numbers only'
+            }
+
+            }
+        }
+       
+
+    </script>
+    
+   
+    
+    
+</body>
+</html>

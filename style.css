@@ -1,0 +1,266 @@
+html,body{
+    height: 100%;
+}
+
+.box1{
+    height: 100%;
+    width: 550px;
+    margin-left: -10px;
+    margin-top: -8px;
+    background: linear-gradient(to left, hsl(249, 99%, 64%), hsl(273, 93%, 30%));
+    display: flex;
+    
+}
+.ib1{
+    height: 301px;
+    width: 527px;
+    border-radius: 10px;
+    background: linear-gradient(to left, hsl(249, 99%, 64%), hsl(325, 93%, 30%));
+    margin-top: -736px;
+    margin-left: 234px;
+    display: flex;
+   
+
+}
+.ib2{
+    height: 301px;
+    width: 527px;
+    border-radius: 10px;
+    background: whitesmoke;
+    margin-top: 50px;
+    margin-left: 344px;
+    display: flex;
+    flex-direction: column;
+   
+
+}
+.c1{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: white;
+    margin-top: 36px;
+    margin-left: 47px;
+}
+.c2{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    
+    margin-top: 47px;
+    margin-left: 23px;
+    border: 1px solid white;
+}
+.nu{
+    display: flex;
+    flex-direction: row;
+}
+.na{
+    display: flex;
+    margin-top: 200px;
+}
+.l1{
+    background-color: black;
+    width: 527px;
+    height: 70px;
+    margin-top: 25px;
+}
+.l2{
+    background-color: rgba(128, 128, 128, 0.808);
+    width: 425px;
+    height: 59px;
+    margin-top: 25px;
+    border-radius: 5px;
+    margin-left: 60px;
+}
+.sam{
+    display: flex;
+}
+.z1{
+    background-color: gray;
+    width: 190px;
+    height: 12px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 94px;
+}
+.z2{
+    background-color: gray;
+    width: 50px;
+    height: 12px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.z3{
+    background-color: gray;
+    width: 60px;
+    height: 12px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.z4{
+    background-color: gray;
+    width: 30px;
+    height: 12px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.sam2{
+    display: flex;
+}
+.z5{
+    background-color: gray;
+    width: 50px;
+    height: 12px;
+    border-radius: 10px;
+    margin-top: 13px;
+    margin-left: 114px;
+    
+}
+.z6{
+    background-color: gray;
+    width: 140px;
+    height: 12px;
+    border-radius: 10px;
+    margin-top: 13px;
+    margin-left: 10px;
+
+}
+.z7{
+    background-color: gray;
+    width: 100px;
+    height: 12px;
+    border-radius: 10px;
+    margin-top: 13px;
+    margin-left: 10px;
+}
+.z8{
+    background-color: gray;
+    width: 20px;
+    height: 12px;
+    border-radius: 10px;
+    margin-top: 13px;
+    margin-left: 10px;
+
+}
+.sam3{
+    display: flex;
+}
+.z9{
+    background-color: gray;
+    width: 30px;
+    height: 12px;
+    border-radius: 10px;
+    margin-top: 13px;
+    margin-left: 90px;
+
+}
+.z10{
+    background-color: gray;
+    width: 60px;
+    height: 12px;
+    border-radius: 10px;
+    margin-top: 13px;
+    margin-left: 10px;
+
+}
+.z11{
+    background-color: gray;
+    width: 50px;
+    height: 12px;
+    border-radius: 10px;
+    margin-top: 13px;
+    margin-left: 10px;
+
+}
+.z12{
+    background-color: gray;
+    width: 190px;
+    height: 12px;
+    border-radius: 10px;
+    margin-top: 13px;
+    margin-left: 10px;
+
+}
+.box2{
+    margin-left: 1204px;
+    margin-top: -560px;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    color: rgb(62, 5, 100);
+    font-size: 20px;
+    font-weight: 700;
+}
+.la2{
+    margin-left: 10px;
+}
+
+input{
+    width: 450px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 2px solid whitesmoke;
+}
+.f1{
+    padding-left: 30px;
+    font-size: 20px;
+}
+.lab2{
+    margin-top: 20px;
+}
+.lab3{
+    margin-top: 20px;
+}
+.f2{
+    width: 70px;
+    height: 50px;
+    padding-left: 30px;
+    font-size: 20px;
+}
+.f3{
+    width: 70px;
+    height: 50px;
+    padding-left: 30px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.la3{
+    margin-left: 50px;
+}
+.to{
+    display: flex;
+}
+.f4{
+    padding-left: 30px;
+    margin-left: 80px;
+    font-size: 20px;
+    width: 120px;
+}
+.b1{
+    width: 450px;
+    height: 50px;
+}
+.but{
+    margin-top: 30px;
+}
+.x1{
+    
+    position: absolute;
+    margin-left: 142px;
+}
+.nu{
+    position: absolute;
+    margin-left: 147px;
+}
+.x2{
+    position: absolute;
+    margin-left: 495px;
+}
